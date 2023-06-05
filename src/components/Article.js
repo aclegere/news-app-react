@@ -43,26 +43,27 @@ function Article() {
         <Text>Today's News</Text>
         <Buttons handleCategoryChange={handleCategoryChange} />
       </Flex>
-      {articles.map((article, index) => (
-        <Flex key={index} align="center" mb="20px">
-          {article.urlToImage && (
-            <Image
-              src={article.urlToImage}
-              alt="Article"
-              width="150px"
-              mr="15px"
-            />
-          )}
-          <Box>
-            <a href={article.url} target="_blank" rel="noopener noreferrer">
-              <Text fontWeight="semibold" _hover={{ color: 'tomato' }}>
-                {article.title}
-              </Text>
-            </a>
-            <Text>{article.description}</Text>
-          </Box>
-        </Flex>
-      ))}
+      {articles &&
+        articles.map((article, index) => (
+          <Flex key={index} align="center" mb="20px">
+            {article.urlToImage && (
+              <Image
+                src={article.urlToImage}
+                alt="Article"
+                width="150px"
+                mr="15px"
+              />
+            )}
+            <Box>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                <Text fontWeight="semibold" _hover={{ color: 'tomato' }}>
+                  {article.title}
+                </Text>
+              </a>
+              <Text>{article.description}</Text>
+            </Box>
+          </Flex>
+        ))}
     </Flex>
   );
 }
