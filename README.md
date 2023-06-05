@@ -11,14 +11,10 @@ Completed initial functionality that displays top news. Next step will be to all
 
 **part 2**
 
-Changed Page title, added functionality to change topics. Complete for now. Unfortunately the news API only allows calls from local host. See the live demo.
+Changed Page title, added functionality to change topics. Complete for now. Unfortunately the news API only allows calls from local host. See the live demo in the files.
 
 ## What I learned
 
 -Reinforced React concepts like hooks, components, modules, etc.
 -Working with Rest APIs
 -Using Chakra API to streamline UI styling
-
-## Live Demo
-
-Today's News — Mozilla Firefox 2023-06-05 07-59-26.mp4
